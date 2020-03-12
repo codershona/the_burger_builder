@@ -8,6 +8,7 @@
 
 ```
    - npx create-react-app the_burger_builder ;
+   - npm run eject ;
    - 
 
 
