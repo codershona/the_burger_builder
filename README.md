@@ -9,6 +9,7 @@
 ```
    - npx create-react-app the_burger_builder ;
    - npm run eject ;
+   - Adding Prop Type Validation :  npm install --save prop-types ;
    - 
 
 
