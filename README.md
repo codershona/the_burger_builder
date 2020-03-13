@@ -21,7 +21,7 @@
     * Application State (Data);
     * Components vs Containers ;
      
-     * Planning our App Layout and Component Tree ;
+    * Planning our App Layout and Component Tree ;
 
 ```
 
