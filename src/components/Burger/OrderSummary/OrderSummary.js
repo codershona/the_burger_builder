@@ -23,6 +23,9 @@ const orderSummary = (props) => {
 
     <p> CONTINUE TO CHECKOUT? </p>
 
+    <button>CANCEL PLEASE</button>
+    <button>CONTINUE HERE</button>
+
    	   </Aux>
 
    	);
