@@ -21,7 +21,7 @@ const orderSummary = (props) => {
         <ul>
          {ingredientSummary}
         </ul>
-        <p><strong>Total Price: {props.price}</strong></p>
+        <p><strong>Total Price: {props.price.toFixed(2)}</strong></p>
 
     <p> CONTINUE TO CHECKOUT? </p>
 
