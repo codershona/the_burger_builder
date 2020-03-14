@@ -21,6 +21,7 @@ const orderSummary = (props) => {
         <ul>
          {ingredientSummary}
         </ul>
+        <p><strong>Total Price: {props.price}</strong></p>
 
     <p> CONTINUE TO CHECKOUT? </p>
 
