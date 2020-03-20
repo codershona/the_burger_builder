@@ -45,7 +45,7 @@ class BurgerBuilder extends Component {
 
 
   componentDidMount () {
-    axios.get('https://the-burger-builder-9bfe3.firebaseio.com/ingredients')
+    axios.get('https://the-burger-builder-9bfe3.firebaseio.com/ingredients.json')
     .then(response => {
       this.setState({ingredients: response.data});
 
@@ -158,7 +158,7 @@ class BurgerBuilder extends Component {
       let orderSummary = null;
 
       let burger = this.state.error ? <p>Ingredients cannot be loaded!</p> : <Spinner />;
-      
+
 
       if ( this.state.ingredients ) {
         burger =  (
