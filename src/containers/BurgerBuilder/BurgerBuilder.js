@@ -119,13 +119,14 @@ class BurgerBuilder extends Component {
       deliveryMethod: 'fatest'
     }
 
-     axios.post('/orders.json', order)
-     .then( response => {
-        this.setState({ loading: false, purchasing: false });
-     } )
-     .catch( error => {
-        this.setState({ loading: false, purchasing: false });
-     } );
+     // axios.post('/orders.json', order)
+     // .then( response => {
+     //    this.setState({ loading: false, purchasing: false });
+     // } )
+     // .catch( error => {
+     //    this.setState({ loading: false, purchasing: false });
+     // } );
+     
  }
     
     render () {
