@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Aux from '../../hoc/Aux/Aux';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
@@ -147,7 +146,20 @@ class BurgerBuilder extends Component {
     //     this.setState({ loading: false, purchasing: false });
     //  } );
 
-    this.props.history.push('/checkout');
+    // this.props.history.push('/checkout');
+
+    const queryParams = [];
+    for (let i in this.state.ingredients) {
+      queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
+
+
+    }
+    const queryString = queryParams.join('&');
+
+    this.props.history.push({
+      pathname: '/checkout',
+      search: '?' + queryString
+    });
      
  }
     
