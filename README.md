@@ -23,7 +23,9 @@
      - I run again after fixing the errors : npm install axios --save ;
      - yarn start is working now in my server ;
      - hoc means higher order component ;
-     -  
+
+     * Working on Adding Routing :
+     
 
     
 
@@ -36,6 +38,11 @@
     * Components vs Containers ;
      
   * Planning our App Layout and Component Tree ;
+
+  * Adding Routing to my Burger Project :
+      - npm install --save react-router-dom react-router ;
+      - But we are using npm install --save react-router-dom (in here run it);
+      - 
 
 ```
 
