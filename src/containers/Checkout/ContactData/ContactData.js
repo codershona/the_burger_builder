@@ -21,9 +21,7 @@ class ContactData extends Component {
 
    orderHandler = (event) => {
       event.preventDefault();
-      // console.log(this.props.ingredients);
-    
-    this.setState({ loading: true });
+      this.setState({ loading: true });
 
     const order = {
       ingredients: this.props.ingredients,
@@ -38,7 +36,7 @@ class ContactData extends Component {
         email: 'lisaaktar399@gmail.com' 
 
       },
-      deliveryMethod: 'fatest'
+      deliveryMethod: 'fastest'
     }
 
      axios.post('/orders.json', order)
@@ -69,7 +67,7 @@ class ContactData extends Component {
       );
 
 
-     if (this.state.loading) {
+     if ( this.state.loading ) {
        form = <Spinner />;
 
      }
