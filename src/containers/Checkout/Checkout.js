@@ -8,13 +8,7 @@ class Checkout extends Component {
 	state = {
 		ingredients: null,
 		price: 0
-		// {
-		// 	salad: 1,
-		// 	meat: 1,
-		// 	cheese: 1,
-		// 	bacon: 1
-		// }
-
+		
 	}
 
 	componentWillMount() {
