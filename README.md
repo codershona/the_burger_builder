@@ -26,7 +26,7 @@
 
      * Working on Adding Routing :
      * Forms and Form Validation ;
-
+     * Redux ;
     
 
 ```
