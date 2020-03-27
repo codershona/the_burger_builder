@@ -11,7 +11,8 @@ class ContactData extends Component {
    
 
       orderForm: {
-
+         // controls: [],
+         //   valid: 
        
         name: {
           elementType: 'input',
@@ -98,15 +99,17 @@ class ContactData extends Component {
               ]
           },
 
-          value: ''
-        },
-      
-  
+          value: '',
+          valid: true
+        }
+    },
 
-      },
+       formIsValid: false,
 
        loading: false
    }
+
+
 
 
 
@@ -162,7 +165,7 @@ class ContactData extends Component {
 
 
    inputChangedHandler = (event, inputIdentifier) => {
-      // console.log(event.target.value);
+      
       const updatedOrderForm = {
         ...this.state.orderForm
       };
@@ -171,13 +174,19 @@ class ContactData extends Component {
       };
       updatedFormElement.value = event.target.value;
       updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
-       
-       updatedFormElement.touched = true;
+      updatedFormElement.touched = true;
       updatedOrderForm[inputIdentifier] = updatedFormElement;
+      
+      // let formIsValid = false;
+      let formIsValid = true;
+      for (let inputIdentifier in updatedOrderForm) {
+        formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid; 
+         
+      }
+        // console.log(formIsValid);
+      // console.log(updatedFormElement);
 
-      console.log(updatedFormElement);
-
-      this.setState({orderForm: updatedOrderForm});
+      this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
 
 
    }
@@ -210,7 +219,7 @@ class ContactData extends Component {
                     />
               ))}
 
-          <Button btnType="Success" clicked={this.orderHandler}>ORDER HERE!</Button>
+  <Button btnType="Success" disabled={!this.state.formIsValid}>ORDER HERE!</Button>
 
            </form>
 
