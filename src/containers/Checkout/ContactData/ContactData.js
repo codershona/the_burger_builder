@@ -70,7 +70,7 @@ class ContactData extends Component {
                 {value: 'cheapest', displayValue: 'Cheapest'}
               ]
           },
-          
+
           value: ''
         },
       
@@ -105,6 +105,11 @@ class ContactData extends Component {
 
    }
 
+   inputChangedHandler = (event) => {
+      console.log(event.target.value);
+
+   }
+
    render () {
 
       const formElementsArray = [];
@@ -125,7 +130,9 @@ class ContactData extends Component {
 
                     elementType={formElement.config.elementType} 
                     elementConfig={formElement.config.elementConfig} 
-                    value={formElement.config.value} />
+                    value={formElement.config.value}
+                    changed={this.inputChangedHandler} 
+                    />
               ))}
 
           <Button btnType="Success" clicked={this.orderHandler}>ORDER HERE!</Button>
