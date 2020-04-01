@@ -52,6 +52,7 @@
 ```
   * Adding Redux to our Project:
 
+       - (Installing Redux and React Rdux) : npm install --save redux react-redux ;
        - 
 
 
