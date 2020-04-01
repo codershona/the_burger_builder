@@ -46,4 +46,15 @@
 
 ```
 
+
+### Redux :
+
+```
+  * Adding Redux to our Project:
+
+       - 
+
+
+```
+
 #### 
