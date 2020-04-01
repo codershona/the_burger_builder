@@ -9,7 +9,8 @@ const initialState = {
 
 	 },
 
-      totalPrice: 4
+      totalPrice: 4,
+      // purchaseable: 
 
 };
 
