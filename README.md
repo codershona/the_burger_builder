@@ -27,6 +27,10 @@
      * Working on Adding Routing :
      * Forms and Form Validation ;
      * Redux ;
+
+    * Redux Advance :
+      - Installing and setuping the Redux Devtools ;
+      - 
     
 
 ```
