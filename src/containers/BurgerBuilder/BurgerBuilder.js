@@ -31,19 +31,19 @@ class BurgerBuilder extends Component {
      console.log(this.props);
 
     axios.get('https://the-burger-builder-9bfe3.firebaseio.com/ingredients.json')
-    .then(response => {
-      this.setState({ingredients: response.data});
+    .then( response => {
+      this.setState( { ingredients: response.data } );
 
 
     })
-      .catch(error => {
-        this.setState({error: true})
+      .catch( error => {
+        this.setState( { error: true } )
       });
 
   }
 
-  updatePurchaseState (ingredients) {
-   const sum = Object.keys(ingredients)
+  updatePurchaseState ( ingredients ) {
+   const sum = Object.keys( ingredients )
       .map(igKey => {
         return ingredients[igKey];
       })

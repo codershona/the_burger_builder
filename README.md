@@ -30,7 +30,9 @@
 
     * Redux Advance :
       - Installing and setuping the Redux Devtools ;
-      - 
+      - Install Redux-Thunk for executing Asynchronous Code : npm install --save redux-thunk ;
+
+      -  
     
 
 ```
