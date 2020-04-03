@@ -26,7 +26,11 @@
 
      * Working on Adding Routing :
      * Forms and Form Validation ;
+     * Redux ;
 
+    * Redux Advance :
+      - Installing and setuping the Redux Devtools ;
+      - 
     
 
 ```
@@ -43,6 +47,19 @@
       - npm install --save react-router-dom react-router ;
       - But we are using npm install --save react-router-dom (in here run it);
       - 
+
+```
+
+
+### Redux :
+
+```
+  * Adding Redux to our Project:
+
+       - (Installing Redux and React Rdux) : npm install --save redux react-redux ;
+       - Basics redux setup done ;
+       
+
 
 ```
 
