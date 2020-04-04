@@ -50,3 +50,13 @@ export const purchaseBurger = ( orderData ) => {
 	};
 
 };
+
+
+export const purchaseInit = () => {
+  return {
+    type: actionTypes.PURCHASE_INIT
+
+
+  };
+
+};
