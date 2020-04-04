@@ -16,12 +16,9 @@ const INGREDIENT_PRICES = {
   bacon: 0.7 
 };
 
+const addIngredient = (state, action) => {
 
-const reducer = ( state = initialState, action ) => {
-	switch (action.type) {
-		case actionTypes.ADD_INGREDIENT:
-
-  const updatedIngredient = { [action.ingredientName]: state.ingredients[action.ingredientName] + 1 }
+	const updatedIngredient = { [action.ingredientName]: state.ingredients[action.ingredientName] + 1 }
 
   const updatedIngredients = updateObject(state.ingredients, updatedIngredient);
 
@@ -30,12 +27,13 @@ const reducer = ( state = initialState, action ) => {
   totalPrice: state.totalPrice + INGREDIENT_PRICES[action.ingredientName] 
 
  }
+     return updateObject(state, updatedState);
+};
 
-		   return updateObject(state, updatedState);
 
-		   case actionTypes.REMOVE_INGREDIENT:
-		    
-  const updatedIng = { [action.ingredientName]: state.ingredients[action.ingredientName] - 1 }
+const removeIngredient = (state, action) => {
+
+	  const updatedIng = { [action.ingredientName]: state.ingredients[action.ingredientName] - 1 }
 
   const updatedIngs = updateObject(state.ingredients, updatedIng);
 
@@ -46,9 +44,11 @@ const reducer = ( state = initialState, action ) => {
  }
 
 		   return updateObject( state, updatedSt );
+   
+ };
 
 
-		     case actionTypes.SET_INGREDIENTS:
+ const setIngredient = (state, action) => {
 
 		     return updateObject(state, {
 
@@ -64,14 +64,25 @@ const reducer = ( state = initialState, action ) => {
 		       	error: false 
 
 		     });
+ };
 
 
-		       case actionTypes.FETCH_INGREDIENTS_FAILED:
-		         return updateObject(state, { error: true });
 
-      default:
+const fetchIngredientsFailed = (state, action) => {
+	 return updateObject(state, { error: true });
 
-	    return state;
+};
+
+const reducer = ( state = initialState, action ) => {
+	switch ( action.type ) {
+		case actionTypes.ADD_INGREDIENT: return addIngredient(state, action);
+   
+   case actionTypes.REMOVE_INGREDIENT: return removeIngredient(state, action); 
+		 
+  case actionTypes.SET_INGREDIENTS: return setIngredient(state, action);
+
+  case actionTypes.FETCH_INGREDIENTS_FAILED: return fetchIngredientsFailed(state, action);
+      default: return state;
 
 	}
 
