@@ -9,7 +9,7 @@ const navigationItems = () => (
 
       <NavigationItem link="/" exact>BURGER BUILDER</NavigationItem>
 
-      <NavigationItem link="/orders">Orders</NavigationItem>
+      <NavigationItem link="/orders">Orders</NavigationItem>                   
 
       <NavigationItem link="/auth">AUTHENTICATE</NavigationItem>
 
