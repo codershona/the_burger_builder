@@ -90,15 +90,15 @@ export const fetchOrdersStart = () => {
 
 
 
-export const fetchOrders = () => {
+export const fetchOrders = (token) => {
    
 
-   return (dispatch, getState) => {
+   return dispatch => {
    
     dispatch(fetchOrdersStart());
 
     
-     axios.get('/orders.json?auth=' + )
+     axios.get('/orders.json?auth=' + token)
         .then(res => {
           
           const fetchedOrders = [];
