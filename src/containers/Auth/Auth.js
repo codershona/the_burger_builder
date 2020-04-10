@@ -158,10 +158,20 @@ class Auth extends Component {
 
       }
 
+      let errorMessage = null;
+
+      if (this.props.error) {
+        errorMessage = (
+            <p>{this.props.error.message}</p>
+          );
+      }
+
+
 
 		return (
 
 			<div className={classes.Auth}>
+           {errorMessage}
 			  <form onSubmit={this.submitHandler}>
 
 			    {form}
@@ -185,7 +195,8 @@ class Auth extends Component {
 
 const mapStateToProps = state => {
    return {
-    loading: state.auth.loading
+    loading: state.auth.loading,
+    error: state.auth.error
 
    };
 
