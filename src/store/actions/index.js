@@ -13,5 +13,4 @@ export {
 
 export {
 	auth
-
 } from './auth';
