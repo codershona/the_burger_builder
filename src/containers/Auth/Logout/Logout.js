@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as actions from '../../../store/actions/index';
+import { Redirect } from 'react-router-dom';
 
 
 
@@ -11,11 +12,8 @@ class Logout extends Component {
 	}
 
 	render () {
-		return (
-
-
-
-		);
+		return <Redirect to="/"/>;
+		
 	}
 }
 
