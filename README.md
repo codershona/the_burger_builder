@@ -31,8 +31,6 @@
     * Redux Advance :
       - Installing and setuping the Redux Devtools ;
       - Install Redux-Thunk for executing Asynchronous Code : npm install --save redux-thunk ;
-
-      -  
     
 
 ```
@@ -65,4 +63,43 @@
 
 ```
 
-#### 
+####  * To ACCESSING PROTECTED RESOURCES : Firebase -> Database => Rules -> 
+
+```
+          {
+            "rules": {
+           ".read": "auth != null" ,
+            ".write": "auth != null"
+            }
+          }
+
+    * OR,
+
+      {
+          "rules": {
+          ".read": "true" ,
+          ".write": "true" ,
+            "orders": {
+            ".read": "auth != null",
+             ".write": "auth != null"
+           }
+        }
+     }
+
+     OR,
+
+      {
+        "rules": {
+         "ingredients": {
+            ".read": "true" ,
+            ".write": "true"
+       },
+          "orders": {
+            ".read": "auth != null" ,
+             ".write": "auth != null"
+        }
+      }
+   }
+
+
+```
