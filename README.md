@@ -30,7 +30,7 @@
 
     * Redux Advance :
       - Installing and setuping the Redux Devtools ;
-      - 
+      - Install Redux-Thunk for executing Asynchronous Code : npm install --save redux-thunk ;
     
 
 ```
@@ -46,7 +46,8 @@
   * Adding Routing to my Burger Project :
       - npm install --save react-router-dom react-router ;
       - But we are using npm install --save react-router-dom (in here run it);
-      - 
+      
+      * Firebase : Get User Data + Exchange a refresh token for an ID Token read in the documentation for ensuring app security.  
 
 ```
 
@@ -63,4 +64,43 @@
 
 ```
 
-#### 
+####  * To ACCESSING PROTECTED RESOURCES : Firebase -> Database => Rules -> 
+
+```
+          {
+            "rules": {
+           ".read": "auth != null" ,
+            ".write": "auth != null"
+            }
+          }
+
+    * OR,
+
+      {
+          "rules": {
+          ".read": "true" ,
+          ".write": "true" ,
+            "orders": {
+            ".read": "auth != null",
+             ".write": "auth != null"
+           }
+        }
+     }
+
+     OR,
+
+      {
+        "rules": {
+         "ingredients": {
+            ".read": "true" ,
+            ".write": "true"
+       },
+          "orders": {
+            ".read": "auth != null" ,
+             ".write": "auth != null"
+        }
+      }
+   }
+
+
+```
