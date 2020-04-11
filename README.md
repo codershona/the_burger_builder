@@ -112,6 +112,15 @@
    - Improvements and Fixes : Polishing the project ;
    - hoc means higher order component ;
    - Lazy loading method is always not bettor option to choose;
+   
+
+```
+
+### Testing React Apps :
+
+```
+   - Because "Just Clicking Around" Doesn't Do It ;
    - 
+
 
 ```
