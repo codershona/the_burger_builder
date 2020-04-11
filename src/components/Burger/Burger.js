@@ -6,7 +6,7 @@ import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 
 const burger = (props) => {
-	 console.log(props);
+	 // console.log(props);
 
 
 	// const transformedIngredients = Object.keys(props.ingredients) // using es6 let here:
