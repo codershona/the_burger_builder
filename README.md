@@ -120,7 +120,33 @@
 
 ```
    - Because "Just Clicking Around" Doesn't Do It ;
-   - 
+
+   * What is Testing ? 
+   ANS: Build App ---> Test manually in browser ---> Automatic Tests
+   ----> Ship App to Server .
+
+   * Why Testing ?
+   ANS: 1) Component should output "Hello" --> (First draft: PASS) + (New Feature : PASS) ;
+   2) Component should always render component "PersonData" ---> (First Draft: PASS) + (New Feature : PASS) ;
+   3) Component should always receive a "persons" prop ---> (First Draft : PASS) + (New Feature : FAIL) ;
+   4) Component should always render the "NewPerson" component when a "editable" (true) prop is received ---> (First Draft: PASS) + (New Feature : FAIL) ;
+
+   
+
+   * TESTING TOOLS :
+   ANSWER: 1) Test Runner : Testing Utilities ;
+
+           2) Executes Tests and provides Validation Library : "
+              Simulates" the React apps(mounts components allows you to dig into the DOM) ;
+
+           3) Jest : Enzyme  (IMPORTANT) ;
+
+
+    * What to Test ?
+    ANS: Don't test the library ; Don't test complex connections! ;
+    Do test isolated units! ; Do test your conditional outputs! 
+
+    * 
 
 
 ```
