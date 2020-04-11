@@ -109,6 +109,7 @@
 ### Improving My Burger Project :
 
 ```
+   - Improvements and Fixes : Polishing the project ;
    - 
 
 ```
