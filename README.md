@@ -161,7 +161,17 @@
 
 ```
    * From Developement to Production :
-     -  
+   
+   * DEPLOYMENTS STEPS :
 
+     - Check (& Adjust) Basepath : <BrowseRouter basename="/my-app/">   ;
 
+     - Build & Optimize Project : ' npm run build ' in create-react-app-project ;
+
+     - Server must ALWAYS serve index.html (also for 404 cases) :
+     To ensure that Routing works correctly ;
+
+     - Upload Build Artifacts to (static) Server : In /build when using create-react-app ;
+
+  
 ```
