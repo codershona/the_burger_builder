@@ -14,11 +14,9 @@ import { connect } from 'react-redux';
 import * as actions from '../../store/actions/index';
 
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
   
- 
-
-	state = {
+ state = {
 
       purchasing: false
 
@@ -26,7 +24,7 @@ class BurgerBuilder extends Component {
 
 
   componentDidMount () {
-     console.log(this.props);
+     // console.log(this.props);
       this.props.onInitIngredients();
 
   }

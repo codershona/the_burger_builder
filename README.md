@@ -104,3 +104,91 @@
 
 
 ```
+
+
+### Improving My Burger Project :
+
+```
+   - Improvements and Fixes : Polishing the project ;
+   - hoc means higher order component ;
+   - Lazy loading method is always not bettor option to choose;
+   
+
+```
+
+### Testing React Apps :
+
+```
+   - Because "Just Clicking Around" Doesn't Do It ;
+
+   * What is Testing ? 
+   ANS: Build App ---> Test manually in browser ---> Automatic Tests
+   ----> Ship App to Server .
+
+   * Why Testing ?
+   ANS: 1) Component should output "Hello" --> (First draft: PASS) + (New Feature : PASS) ;
+   2) Component should always render component "PersonData" ---> (First Draft: PASS) + (New Feature : PASS) ;
+   3) Component should always receive a "persons" prop ---> (First Draft : PASS) + (New Feature : FAIL) ;
+   4) Component should always render the "NewPerson" component when a "editable" (true) prop is received ---> (First Draft: PASS) + (New Feature : FAIL) ;
+
+   
+
+   * TESTING TOOLS :
+   ANSWER: 1) Test Runner : Testing Utilities ;
+
+           2) Executes Tests and provides Validation Library : "
+              Simulates" the React apps(mounts components allows you to dig into the DOM) ;
+
+           3) Jest : Enzyme  (IMPORTANT) ;
+
+
+    * What to Test ?
+    ANS: Don't test the library ; Don't test complex connections! ;
+    Do test isolated units! ; Do test your conditional outputs! 
+
+    * Notes :
+
+       - npm install --save enzyme react-test-renderer enzyme-adapter-react-16 ;
+
+       - To test your package run : npm test/ npm run test ;
+
+       - Jest is a javascript test runner and i can use it any javascript project ;
+  
+```
+
+
+### Deploying the React Apps to the WEB :
+
+```
+   * From Developement to Production :
+   
+   * DEPLOYMENTS STEPS :
+
+     - Check (& Adjust) Basepath : <BrowseRouter basename="/my-app/">   ;
+
+     - Build & Optimize Project : ' npm run build ' in create-react-app-project ;
+
+     - Server must ALWAYS serve index.html (also for 404 cases) :
+     To ensure that Routing works correctly ;
+
+     - Upload Build Artifacts to (static) Server : In /build when using create-react-app ;
+
+     - Deploying my react apps using Firebase ;
+
+     - Optional Hosting we also can use to deploy ( AWS S3 ) ;
+
+     - Firebase ==> Hosting ---> Click Get Started ;
+
+     - Install Firebase CLI : Run this : npm install -g firebase-tools / If you use mac then run : sudo npm install -g firebase-tools ;
+
+     - Initializing my Project : (Sign in to Google : firebase login) AND, (firebase init ---> to initialize my project into my root's project directory) ;
+
+     - (firebase init ---> then chose hostong option and press space button and press Enter to confirm ---> Select don't setup a default project ===>  What do you want to use as your public directory? build  --[write:  build] --->  Configure as a single-page app (rewrite all urls to /index.html)? (y
+      /N) y (yes)  ----> File build/index.html already exists. Overwrite? (y/N) n (no) ---> press Enter) ; 
+
+     - Then check firebaserc file and firebase.json file ;
+     - firebase deploy ;
+     - Project Console: https://console.firebase.google.com/project/the-burger-builder-9bfe3/overview
+     Hosting URL: https://the-burger-builder-9bfe3.web.app ;
+
+```
