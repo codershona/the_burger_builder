@@ -173,5 +173,7 @@
 
      - Upload Build Artifacts to (static) Server : In /build when using create-react-app ;
 
-  
+     - Deploying my react apps using Firebase ;
+
+
 ```
