@@ -175,5 +175,20 @@
 
      - Deploying my react apps using Firebase ;
 
+     - Optional Hosting we also can use to deploy ( AWS S3 ) ;
+
+     - Firebase ==> Hosting ---> Click Get Started ;
+
+     - Install Firebase CLI : Run this : npm install -g firebase-tools / If you use mac then run : sudo npm install -g firebase-tools ;
+
+     - Initializing my Project : (Sign in to Google : firebase login) AND, (firebase init ---> to initialize my project into my root's project directory) ;
+
+     - (firebase init ---> then chose hostong option and press space button and press Enter to confirm ---> Select don't setup a default project ===>  What do you want to use as your public directory? build  --[write:  build] --->  Configure as a single-page app (rewrite all urls to /index.html)? (y
+      /N) y (yes)  ----> File build/index.html already exists. Overwrite? (y/N) n (no) ---> press Enter) ; 
+
+     - Then check firebaserc file and firebase.json file ;
+     - firebase deploy ;
+     - Project Console: https://console.firebase.google.com/project/the-burger-builder-9bfe3/overview
+     Hosting URL: https://the-burger-builder-9bfe3.web.app ;
 
 ```
