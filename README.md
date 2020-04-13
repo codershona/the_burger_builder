@@ -153,7 +153,15 @@
        - To test your package run : npm test/ npm run test ;
 
        - Jest is a javascript test runner and i can use it any javascript project ;
-       - 
+  
+```
+
+
+### Deploying the React Apps to the WEB :
+
+```
+   * From Developement to Production :
+     -  
 
 
 ```
