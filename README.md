@@ -150,6 +150,8 @@
 
        - npm install --save enzyme react-test-renderer enzyme-adapter-react-16 ;
 
+       - To test your package run : npm test/ npm run test ;
+
        - 
 
 
