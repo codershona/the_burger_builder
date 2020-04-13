@@ -146,7 +146,11 @@
     ANS: Don't test the library ; Don't test complex connections! ;
     Do test isolated units! ; Do test your conditional outputs! 
 
-    * 
+    * Notes :
+
+       - npm install --save enzyme react-test-renderer enzyme-adapter-react-16 ;
+
+       - 
 
 
 ```
