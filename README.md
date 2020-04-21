@@ -230,3 +230,15 @@
 
 
 ```
+
+
+### Learning Redux Saga :
+
+```
+   * Module : Installing Redux Saga (Redux Saga is an alternative to Redux-Thunk) :
+   
+     - npm install --save redux-saga ;
+     - 
+
+
+```
