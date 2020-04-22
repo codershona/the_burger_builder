@@ -15,7 +15,9 @@ import authReducer from './store/reducers/auth';
 
 import createSagaMiddleware from 'redux-saga';
 
-import { logoutSaga } from './store/sagas/auth';
+// import { logoutSaga } from './store/sagas/auth';
+
+import { watchAuth } from './store/sagas';
 
 
 
@@ -45,7 +47,9 @@ const store = createStore(rootReducer, composeEnhancers(
 // Using my saga middleware :
 
 // sagaMiddleware.run(logoutSaga);
- sagaMiddleware.run(logoutSaga);
+ // sagaMiddleware.run(logoutSaga);
+
+ sagaMiddleware.run(watchAuth);
 
 
 
