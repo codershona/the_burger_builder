@@ -43,7 +43,8 @@ const store = createStore(rootReducer, composeEnhancers(
 
 
 // Using my saga middleware :
-sagaMiddleware.run(logoutSaga);
+
+// sagaMiddleware.run(logoutSaga);
 
 
 
