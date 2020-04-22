@@ -4,7 +4,7 @@ import * as actionTypes from '../actions/actionTypes';
 
 
 
-function* logout(action) {
+export function* logoutSaga(action) {
 
     yield localStorage.removeItem('token');
     yield localStorage.removeItem('expirationDate');
