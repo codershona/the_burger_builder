@@ -192,3 +192,53 @@
      Hosting URL: https://the-burger-builder-9bfe3.web.app ;
 
 ```
+
+
+### Working with WEBPACK :
+
+```
+    - Webpack and creating a workflow : A Primer ;
+
+    * What is Webpack ? 
+
+    ANS: -  JS+JS+JS ---> Analyzes Connections and Bundles/Optimizes Everything -----> bundle.js  ;
+
+    -  CSS+CSS ----> Analyzes Connections and Bundles/Optimizes Everything ---> bundle.css ;
+
+    - JPG+PNG ----> Analyzes Connections and Bundles/Optimizes Everything ----> Optimized JPG + Optimizied PNG ;
+
+    * How it Works ? 
+
+    ANS: - Multiple Entry Points are Possible ---> entry (e.g. app.js) ;
+
+    - File-type dependent transformations ---> Loaders(e.g. babel-loader, css-loader);
+
+    - Global transformations ----> Plugins(e.g. uglify) ;
+
+    - Correctly ordered, concatenated output ----> output(e.g. dist/bundle.js) ;
+
+    * Basic Workflow Requirements :
+
+    ANS : -  Complie Next-Gen Javascript Features ;
+    - Handle JSX ;
+    - CSS Autoprefixing ;
+    - Support Image Imports ;
+    - Optimize Code ;
+
+    
+
+
+
+```
+
+
+### Learning Redux Saga :
+
+```
+   * Module : Installing Redux Saga (Redux Saga is an alternative to Redux-Thunk) :
+   
+     - npm install --save redux-saga ;
+     - At last, read Redux-saga offiial page for more logics and methods ;
+
+
+```
