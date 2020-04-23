@@ -238,7 +238,7 @@
    * Module : Installing Redux Saga (Redux Saga is an alternative to Redux-Thunk) :
    
      - npm install --save redux-saga ;
-     - 
+     - At last, read Redux-saga offiial page for more logics and methods ;
 
 
 ```
