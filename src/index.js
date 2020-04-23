@@ -17,7 +17,7 @@ import createSagaMiddleware from 'redux-saga';
 
 // import { logoutSaga } from './store/sagas/auth';
 
-import { watchAuth, watchBurgerBuilder } from './store/sagas';
+import { watchAuth, watchBurgerBuilder, watchOrder } from './store/sagas';
 
 
 
@@ -50,9 +50,10 @@ const store = createStore(rootReducer, composeEnhancers(
  // sagaMiddleware.run(logoutSaga);
 
  sagaMiddleware.run(watchAuth);
+ 
+ sagaMiddleware.run(watchBurgerBuilder);
 
-
-  sagaMiddleware.run(watchBurgerBuilder);
+ sagaMiddleware.run(watchOrder);
 
 
 const app = (
