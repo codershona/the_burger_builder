@@ -37,7 +37,7 @@ export const AUTH_LOGOUT = 'AUTH_LOGOUT';
 
 export const SET_AUTH_REDIRECT_PATH = 'SET_AUTH_REDIRECT_PATH';
 
-
+export const INIT_INGREDIENTS = 'INIT_INGREDIENTS';
 
 
 
