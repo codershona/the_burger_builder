@@ -1,6 +1,7 @@
-import { delay } from 'redux-saga';
+import { delay } from 'redux-saga/effects';
 import { put } from 'redux-saga/effects';
 // import * as actionTypes from '../actions/actionTypes';
+// import { delay } from 'redux-saga;
 import axios from 'axios';
 
 import * as actions from '../actions/index';
@@ -80,7 +81,7 @@ export function* authCheckStateSaga(action) {
             const expirationDate = yield new Date(localStorage.getItem('expirationDate'));
            if (expirationDate <= new Date()) {
 
-               yield put(actioons.logout());
+               yield put(actions.logout());
 
            } else {
 
