@@ -19,6 +19,9 @@ export const FETCH_ORDERS_SUCCESS = 'FETCH_ORDERS_SUCCESS';
 
 export const FETCH_ORDERS_FAIL = 'FETCH_ORDERS_FAIL';
 
+export const AUTH_USER = 'AUTH_USER';
+
+
 
 export const AUTH_START = 'AUTH_START';
 
