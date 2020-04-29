@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout/Layout';
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
@@ -34,16 +34,16 @@ const asyncAuth = asyncComponent(() => {
 
 
 
-class App extends Component {
+const app = props =>  {
 
-  componentDidMount () {
-    this.props.onTryAutoSignup();
+  useEffect(() => {
+
+    props.onTryAutoSignup();
+
+  }, []);
     
-  }
-  
- render () {
-     
-     let routes = (
+ 
+  let routes = (
        <Switch>
         <Route path="/auth" component={asyncAuth} />
           <Route path="/" exact component={BurgerBuilder} />
@@ -52,7 +52,7 @@ class App extends Component {
 
       );
 
-     if (this.props.isAuthenticated) {
+     if (props.isAuthenticated) {
       routes = (
 
       <Switch>
@@ -74,7 +74,7 @@ class App extends Component {
           </Layout>
       </div>
     );
-  }
+  
 }
 
 
@@ -94,4 +94,10 @@ const mapDispatchToProps = dispatch => {
 };
 
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(
+connect(
+mapStateToProps, 
+mapDispatchToProps
+)
+(app)
+);
