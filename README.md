@@ -7,7 +7,7 @@
 	
 <img src="https://user-images.githubusercontent.com/57604500/121778074-7a753780-cb95-11eb-9fa9-2b11bd7bf1bb.png" width=1056 height=550>
 <br />
-<h3 align="center">CHAT APP</h3>
+<h3 align="center">Burger Builder App</h3>
 </p>
 
 * Project Description :
