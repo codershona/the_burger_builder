@@ -3,8 +3,14 @@
 #### Project Can be found in here :
  **[Live version](https://the-burger-builder-9bfe3.web.app)**
 
+<p align="center">
+	
+<img src="https://user-images.githubusercontent.com/57604500/121778074-7a753780-cb95-11eb-9fa9-2b11bd7bf1bb.png" width=1056 height=550>
+<br />
+<h3 align="center">CHAT APP</h3>
+</p>
 
-* NOTES :
+* Project Description :
 
 
 ```
